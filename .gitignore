@@ -1,0 +1,17 @@
+# Artifact files
+*.box
+*.iso
+
+# Interim files
+*.pem
+*.pub
+.vagrant
+manifest.json
+packer_cache/
+
+# Variable files
+aws.json
+google.json
+account.json
+vars.json
+variables.json
