@@ -1,0 +1,73 @@
+{
+  "variables": {
+    "name": "ubuntu-1704",
+
+    "aws_region": "us-east-1",
+    "aws_ami_regions": "us-east-1",
+    "aws_source_ami": "ami-5cd4a126",
+    "aws_instance_type": "t2.micro",
+
+    "google_zone": "us-east1-b",
+    "google_source_image": "ubuntu-1704-zesty-v20171208",
+    "google_machine_type": "g1-small"
+  },
+
+  "builders": [{
+    "name": "aws",
+    "type": "amazon-ebs",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "{{user `aws_region`}}",
+    "vpc_id": "{{user `aws_vpc_id`}}",
+    "subnet_id": "{{user `aws_subnet_id`}}",
+    "source_ami": "{{user `aws_source_ami`}}",
+    "instance_type": "{{user `aws_instance_type`}}",
+    "ami_name": "packer-{{user `name`}}-{{user `build`}}",
+    "ami_regions": "{{user `aws_ami_regions`}}",
+    "force_deregister": true,
+    "associate_public_ip_address": true,
+    "ssh_pty": true,
+    "ssh_username": "ubuntu",
+    "tags": {
+      "Name": "{{user `name`}}",
+      "Version": "{{user `version`}}",
+      "Build": "{{user `build`}}",
+      "Packer": "{{packer_version}}"
+    }
+  }, {
+    "name": "google",
+    "type": "googlecompute",
+    "account_file": "../account.json",
+    "project_id": "{{user `google_project_id`}}",
+    "zone": "{{user `google_zone`}}",
+    "network": "{{user `google_network`}}",
+    "subnetwork": "{{user `google_subnetwork`}}",
+    "source_image": "{{user `google_source_image`}}",
+    "machine_type": "{{user `google_machine_type`}}",
+    "image_name": "packer-{{user `name`}}-{{user `build`}}",
+    "use_internal_ip": false,
+    "ssh_pty": true,
+    "ssh_username": "ubuntu",
+    "image_labels": {
+      "name": "{{user `name`}}",
+      "build": "{{user `build`}}",
+      "version": "{{user `version` | clean_image_name}}",
+      "packer": "{{packer_version | clean_image_name}}"
+    }
+  }],
+
+  "provisioners": [{
+    "type": "file",
+    "source": "../scripts",
+    "destination": "/tmp"
+  }, {
+    "type": "shell",
+    "script": "config.sh",
+    "execute_command": "echo 'password' | {{ .Vars }} sudo -S -E '{{ .Path }}'"
+  }],
+
+  "post-processors": [{
+    "type": "manifest",
+    "output": "manifest.json"
+  }]
+}

@@ -3,10 +3,16 @@ This is a [Packer](https://www.packer.io) project for building pre-configured im
 These images can be used for provisioning nodes in misc cloud platforms.
 
 ## Available Images
-| Image | AWS  | Azure | Google Cloud |
-|-------|:----:|:-----:|:------------:|
+| Image        | AWS  | Azure | Google Cloud |
+|--------------|:----:|:-----:|:------------:|
+| CentOS 7     |  ✓   |       |  ✓           |
+| Debian 9     |  ✓   |       |  ✓           |
+| Ubuntu 17.04 |  ✓   |       |  ✓           |
 
 ## Configurations
+
+### Prerequisites
+You need to have the latest version of [Packer](https://www.packer.io/downloads.html) installed.
 
 ### AWS
 For building Amazon machine images, you need to have an `aws.json` file in the root of project.
@@ -50,3 +56,16 @@ You can get this file from Google Cloud Platform console.
   3. Enter a name and select `Project > Editor` for *Role*.
   4. Check `Furnish a new private key` and select `JSON`.
   5. Click on `CREATE` button, download the file, rename it to `account.json`.
+
+## Building Images
+You can build images using the following commands.
+
+| All Platforms | AWS                         | Google Cloud                   |
+|---------------|-----------------------------|--------------------------------|
+| `make centos` | `make centos platforms=aws` | `make centos platforms=google` |
+| `make debian` | `make debian platforms=aws` | `make debian platforms=google` |
+| `make ubuntu` | `make ubuntu platforms=aws` | `make ubuntu platforms=google` |
+
+### Updating Images
+If you want to update the base image for any of the available images,
+change the `aws_source_ami` or `google_source_image` property in `variables` section of the image `json` file.
