@@ -15,3 +15,9 @@ google.json
 account.json
 vars.json
 variables.json
+
+# Terraform files
+*.tfvars
+*.tfstate
+*.tfstate.backup
+.terraform/

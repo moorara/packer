@@ -69,3 +69,16 @@ You can build images using the following commands.
 ### Updating Images
 If you want to update the base image for any of the available images,
 change the `aws_source_ami` or `google_source_image` property in `variables` section of the image `json` file.
+
+## Running Tests
+Each image comes with a set of tests. These tests are command-based.
+A new instance is spun up using [Terraform](https://www.packer.io).
+Then, the given commands are run through `ssh`, and a set of regexes are tested against the output.
+
+You can run the tests as follows.
+
+```
+make centos-test
+make debian-test
+make ubuntu-test
+```
