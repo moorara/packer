@@ -1,14 +1,14 @@
 {
   "variables": {
-    "name": "ubuntu-1704",
+    "name": "ubuntu-1604",
 
     "aws_region": "us-east-1",
     "aws_ami_regions": "us-east-1",
-    "aws_source_ami": "ami-5cd4a126",
+    "aws_source_ami": "ami-41e0b93b",
     "aws_instance_type": "t2.micro",
 
     "google_zone": "us-east1-b",
-    "google_source_image": "ubuntu-1704-zesty-v20171208",
+    "google_source_image": "ubuntu-1604-xenial-v20180112",
     "google_machine_type": "g1-small"
   },
 

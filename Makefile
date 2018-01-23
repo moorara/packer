@@ -70,5 +70,6 @@ ubuntu-test:
 
 
 .PHONY: clean
-.PHONY: centos debian ubuntu
-.PHONY: centos-test debian-test ubuntu-test
+.PHONY: centos centos-test
+.PHONY: debian debian-test
+.PHONY: ubuntu ubuntu-test
