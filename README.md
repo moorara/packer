@@ -7,7 +7,7 @@ These images can be used for provisioning nodes in misc cloud platforms.
 |--------------|:----:|:-----:|:------------:|
 | CentOS 7     |  ✓   |       |  ✓           |
 | Debian 9     |  ✓   |       |  ✓           |
-| Ubuntu 17.04 |  ✓   |       |  ✓           |
+| Ubuntu 16.04 |  ✓   |       |  ✓           |
 
 ## Configurations
 
