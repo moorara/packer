@@ -36,6 +36,7 @@ function provision_aws_resources {
 
   terraform init 1> /dev/null
   terraform apply \
+    -auto-approve \
     -input=false \
     -var "aws_access_key=$aws_access_key" \
     -var "aws_secret_key=$aws_secret_key" \
@@ -113,7 +114,7 @@ function cleanup_aws_resources {
   aws_ami=${4:-$aws_ami}
 
   terraform destroy \
-    -force \
+    -auto-approve \
     -var "aws_access_key=$aws_access_key" \
     -var "aws_secret_key=$aws_secret_key" \
     -var "aws_region=$aws_region" \

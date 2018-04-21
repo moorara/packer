@@ -2,10 +2,10 @@
   "ssh_user": "ubuntu",
   "tests" : [{
     "command": "docker --version",
-    "expected": [ "18.01.0-ce" ]
+    "expected": [ "18.04.0-ce" ]
   }, {
     "command": "docker-compose --version",
-    "expected": [ "1.18.0" ]
+    "expected": [ "1.21.0" ]
   }, {
     "command": "docker ps",
     "expected": [ "CONTAINER ID", "IMAGE", "COMMAND", "CREATED", "STATUS", "PORTS", "NAMES" ]

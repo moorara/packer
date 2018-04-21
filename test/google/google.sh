@@ -38,6 +38,7 @@ function provision_google_resources {
 
   terraform init 1> /dev/null
   terraform apply \
+    -auto-approve \
     -input=false \
     -var "google_account_file=$google_account_file" \
     -var "google_project_id=$google_project_id" \
@@ -97,7 +98,7 @@ function cleanup_google_resources {
   ssh_user=${4:-$ssh_user}
 
   terraform destroy \
-    -force \
+    -auto-approve \
     -var "google_account_file=$google_account_file" \
     -var "google_project_id=$google_project_id" \
     -var "google_image=$google_image" \

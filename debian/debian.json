@@ -4,11 +4,11 @@
 
     "aws_region": "us-east-1",
     "aws_ami_regions": "us-east-1",
-    "aws_source_ami": "ami-628ad918",
+    "aws_source_ami": "ami-47d90438",
     "aws_instance_type": "t2.micro",
 
     "google_zone": "us-east1-b",
-    "google_source_image": "debian-9-stretch-v20180105",
+    "google_source_image": "debian-9-stretch-v20180401",
     "google_machine_type": "g1-small"
   },
 
