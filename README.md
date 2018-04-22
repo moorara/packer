@@ -9,6 +9,7 @@ These images can be used for provisioning nodes in misc cloud platforms.
 |--------------|:----:|:-----:|:------------:|
 | CentOS 7     |  ✓   |       |  ✓           |
 | Debian 9     |  ✓   |       |  ✓           |
+| Fedora 27    |  ✓   |       |              |
 | Ubuntu 16.04 |  ✓   |       |  ✓           |
 
 ## Configurations
@@ -66,6 +67,7 @@ You can build images using the following commands.
 |---------------|-----------------------------|--------------------------------|
 | `make centos` | `make centos platforms=aws` | `make centos platforms=google` |
 | `make debian` | `make debian platforms=aws` | `make debian platforms=google` |
+| `make fedora` | `make fedora platforms=aws` |                                |
 | `make ubuntu` | `make ubuntu platforms=aws` | `make ubuntu platforms=google` |
 
 ### Updating Images
@@ -82,6 +84,7 @@ You can run the tests as follows.
 ```
 make centos-test
 make debian-test
+make fedora-test
 make ubuntu-test
 ```
 
