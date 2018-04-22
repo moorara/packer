@@ -17,4 +17,5 @@ install:
 script:
   - packer validate -syntax-only centos/centos.json
   - packer validate -syntax-only debian/debian.json
+  - packer validate -syntax-only fedora/fedora.json
   - packer validate -syntax-only ubuntu/ubuntu.json

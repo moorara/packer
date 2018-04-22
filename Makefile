@@ -49,6 +49,25 @@ debian-test:
 	    --manifest $(path)/debian/manifest.json \
 	    --tests $(path)/debian/tests.json
 
+fedora:
+	@ cd fedora && \
+	  packer build -force \
+	    -only '$(platforms)' \
+	    -var 'version=$(version)' \
+	    -var 'build=$(build)' \
+	    -var-file '../aws.json' \
+	    -var-file '../google.json' \
+	    fedora.json
+
+fedora-test:
+	@ cd test && \
+	  ./run.sh \
+	    --aws $(path)/aws.json \
+	    --google $(path)/google.json \
+	    --account $(path)/account.json \
+	    --manifest $(path)/fedora/manifest.json \
+	    --tests $(path)/fedora/tests.json
+
 ubuntu:
 	@ cd ubuntu && \
 	  packer build -force \
@@ -72,4 +91,5 @@ ubuntu-test:
 .PHONY: clean
 .PHONY: centos centos-test
 .PHONY: debian debian-test
+.PHONY: fedora fedora-test
 .PHONY: ubuntu ubuntu-test
