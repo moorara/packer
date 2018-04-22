@@ -1,5 +1,17 @@
 # Change Log
 
+## [v0.1.3](https://github.com/moorara/cloud-images/tree/v0.1.3) (2018-04-22)
+[Full Changelog](https://github.com/moorara/cloud-images/compare/v0.1.2...v0.1.3)
+
+**Closed issues:**
+
+- Add Continuous Integration [\#4](https://github.com/moorara/cloud-images/issues/4)
+
+**Merged pull requests:**
+
+- Add Continuous Integration [\#7](https://github.com/moorara/cloud-images/pull/7) ([moorara](https://github.com/moorara))
+- Add Fedora 27 for AWS [\#6](https://github.com/moorara/cloud-images/pull/6) ([moorara](https://github.com/moorara))
+
 ## [v0.1.2](https://github.com/moorara/cloud-images/tree/v0.1.2) (2018-04-21)
 [Full Changelog](https://github.com/moorara/cloud-images/compare/v0.1.1...v0.1.2)
 
