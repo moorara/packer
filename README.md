@@ -1,3 +1,5 @@
+[![Build Status][travisci-image]][travisci-url]
+
 # cloud-images
 This is a [Packer](https://www.packer.io) project for building pre-configured images.
 These images can be used for provisioning nodes in misc cloud platforms.
@@ -82,3 +84,7 @@ make centos-test
 make debian-test
 make ubuntu-test
 ```
+
+
+[travisci-url]: https://travis-ci.org/moorara/cloud-images
+[travisci-image]: https://travis-ci.org/moorara/cloud-images.svg?branch=master
