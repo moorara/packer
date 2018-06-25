@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.1.4](https://github.com/moorara/cloud-images/tree/v0.1.4) (2018-06-25)
+[Full Changelog](https://github.com/moorara/cloud-images/compare/v0.1.3...v0.1.4)
+
+**Merged pull requests:**
+
+- Update base images [\#8](https://github.com/moorara/cloud-images/pull/8) ([moorara](https://github.com/moorara))
+
 ## [v0.1.3](https://github.com/moorara/cloud-images/tree/v0.1.3) (2018-04-22)
 [Full Changelog](https://github.com/moorara/cloud-images/compare/v0.1.2...v0.1.3)
 
