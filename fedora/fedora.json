@@ -4,7 +4,7 @@
 
     "aws_region": "us-east-1",
     "aws_ami_regions": "us-east-1",
-    "aws_source_ami": "ami-8afb4df0",
+    "aws_source_ami": "ami-e754e298",
     "aws_instance_type": "t2.micro"
   },
 

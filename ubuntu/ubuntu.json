@@ -4,11 +4,11 @@
 
     "aws_region": "us-east-1",
     "aws_ami_regions": "us-east-1",
-    "aws_source_ami": "ami-6dfe5010",
+    "aws_source_ami": "ami-a4dc46db",
     "aws_instance_type": "t2.micro",
 
     "google_zone": "us-east1-b",
-    "google_source_image": "ubuntu-1604-xenial-v20180418",
+    "google_source_image": "ubuntu-1604-xenial-v20180612",
     "google_machine_type": "g1-small"
   },
 

@@ -20,7 +20,7 @@ function install_docker {
 }
 
 function install_docker_compose {
-  compose_version=1.21.0
+  compose_version=1.21.2
   compose_path=/usr/bin/docker-compose
   curl -fsSL -o $compose_path https://github.com/docker/compose/releases/download/$compose_version/docker-compose-Linux-x86_64
   chmod 755 $compose_path
