@@ -9,7 +9,7 @@ These images can be used for provisioning nodes in misc cloud platforms.
 |--------------|:----:|:-----:|:------------:|
 | CentOS 7     |  ✓   |       |  ✓           |
 | Debian 9     |  ✓   |       |  ✓           |
-| Fedora 27    |  ✓   |       |              |
+| Fedora 29    |  ✓   |       |              |
 | Ubuntu 16.04 |  ✓   |       |  ✓           |
 
 ## Configurations
@@ -56,9 +56,11 @@ You can get this file from Google Cloud Platform console.
 
   1. Go to `IAM & admin > Service accounts`.
   2. Click on `CREATE SERVICE ACCOUNT`.
-  3. Enter a name and select `Project > Editor` for **Role**.
-  4. Check `Furnish a new private key` and select `JSON`.
-  5. Click on `CREATE` button, download the file, rename it to `account.json`.
+  3. Enter a name and description if you need.
+  4. select `Project > Editor` for **Role**.
+  5. Click on `CREATE KEY`, select `JSON`, and click `CREATE`.
+  6. Download the file and rename it to `account.json`.
+  7. Click `DONE`.
 
 ## Building Images
 You can build images using the following commands.
