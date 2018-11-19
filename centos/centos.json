@@ -8,7 +8,7 @@
     "aws_instance_type": "t2.micro",
 
     "google_zone": "us-east1-b",
-    "google_source_image": "centos-7-v20180611",
+    "google_source_image": "centos-7-v20181113",
     "google_machine_type": "g1-small"
   },
 

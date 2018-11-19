@@ -9,7 +9,7 @@ clean:
 	@ rm -rf test/aws/.terraform test/google/.terraform && \
 	  rm -f test/aws/terraform.tfstate* test/google/terraform.tfstate* && \
 	  rm -f test/aws/*.pem test/aws/*.pub test/google/*.pem test/google/*.pub && \
-		rm -f centos/manifest.json debian/manifest.json ubuntu/manifest.json
+	  rm -f centos/manifest.json debian/manifest.json ubuntu/manifest.json
 
 centos:
 	@ cd centos && \

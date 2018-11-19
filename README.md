@@ -9,7 +9,7 @@ These images can be used for provisioning nodes in misc cloud platforms.
 |--------------|:----:|:-----:|:------------:|
 | CentOS 7     |  ✓   |       |  ✓           |
 | Debian 9     |  ✓   |       |  ✓           |
-| Fedora 27    |  ✓   |       |              |
+| Fedora 29    |  ✓   |       |              |
 | Ubuntu 16.04 |  ✓   |       |  ✓           |
 
 ## Configurations
