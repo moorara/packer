@@ -46,7 +46,7 @@ For creating a new _AWS IAM_ user, follow these steps:
   1. Click on **Add user**, choose a **User name** and select **Programmatic access**.
   1. Click on **Next: Permissions** and set required permissions (assign to a group or attach policies).
   1. Click on **Next: Tags** and any tag if you need.
-  1. Click on **Next: Review**
+  1. Click on **Next: Review**.
   1. Click on **Create user** and record **Access key ID** and **Secret access key**.
 
 ### Google Cloud
@@ -107,6 +107,10 @@ make debian-test
 make fedora-test
 make ubuntu-test
 ```
+
+Here is an screenshot of test results:
+
+![test-screenshot](./images/test-screenshot.png "test-screenshot")
 
 
 [workflow-url]: https://github.com/moorara/packer/actions
