@@ -1,5 +1,13 @@
 # Change Log
 
+## [v0.1.6](https://github.com/moorara/packer/tree/v0.1.6) (2019-09-22)
+[Full Changelog](https://github.com/moorara/packer/compare/v0.1.5...v0.1.6)
+
+**Merged pull requests:**
+
+- Refactor tests [\#17](https://github.com/moorara/packer/pull/17) ([moorara](https://github.com/moorara))
+- Update Terraform code to new 0.12 [\#16](https://github.com/moorara/packer/pull/16) ([moorara](https://github.com/moorara))
+
 ## [v0.1.5](https://github.com/moorara/packer/tree/v0.1.5) (2019-09-22)
 [Full Changelog](https://github.com/moorara/packer/compare/v0.1.4...v0.1.5)
 
