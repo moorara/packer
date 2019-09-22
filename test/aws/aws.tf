@@ -9,11 +9,37 @@ resource "aws_key_pair" "packer-test" {
   public_key = "${file("packer-test.pub")}"
 }
 
+resource "aws_security_group" "packer-test" {
+  name = "packer-test"
+  egress {
+    from_port = 0
+    to_port = 0
+    protocol = "-1"
+    cidr_blocks = [ "0.0.0.0/0" ]
+  }
+  ingress {
+    to_port = -1
+    from_port = -1
+    protocol = "icmp"
+    cidr_blocks = [ "0.0.0.0/0" ]
+  }
+  ingress {
+    from_port = 22
+    to_port = 22
+    protocol = "tcp"
+    cidr_blocks =  [ "0.0.0.0/0" ]
+  }
+  tags = {
+    Name = "packer-test"
+  }
+}
+
 resource "aws_instance" "packer-test" {
   ami = "${var.aws_ami}"
   instance_type = "${var.aws_instance_type}"
   key_name = "${aws_key_pair.packer-test.key_name}"
-  tags {
+  security_groups = [ "${aws_security_group.packer-test.name}" ]
+  tags = {
     Name = "packer-test"
   }
 }

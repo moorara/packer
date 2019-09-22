@@ -19,6 +19,6 @@ install_docker "fedora"
 install_docker_compose
 
 # Clean up image
-dnf autoremove -y
+# dnf autoremove -y
 dnf clean all
 rm -rf /tmp/*

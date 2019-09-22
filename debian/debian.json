@@ -1,14 +1,14 @@
 {
   "variables": {
-    "name": "debian-9",
+    "name": "debian-10",
 
     "aws_region": "us-east-1",
     "aws_ami_regions": "us-east-1",
-    "aws_source_ami": "ami-0f4768a55eaaac3d7",
+    "aws_source_ami": "ami-01db78123b2b99496",
     "aws_instance_type": "t2.micro",
 
-    "google_zone": "us-east1-b",
-    "google_source_image": "debian-9-stretch-v20181113",
+    "google_zone": "us-east4-a",
+    "google_source_image": "debian-10-buster-v20190916",
     "google_machine_type": "g1-small"
   },
 

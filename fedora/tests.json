@@ -2,10 +2,10 @@
   "ssh_user": "fedora",
   "tests" : [{
     "command": "docker --version",
-    "expected": [ "18.09.0-ce" ]
+    "expected": [ "19.03.2" ]
   }, {
     "command": "docker-compose --version",
-    "expected": [ "1.23.1" ]
+    "expected": [ "1.24.1" ]
   }, {
     "command": "docker ps",
     "expected": [ "CONTAINER ID", "IMAGE", "COMMAND", "CREATED", "STATUS", "PORTS", "NAMES" ]

@@ -46,8 +46,8 @@ function provision_aws_resources {
 
   flag_aws_active=true
 
-  aws_instance_id=$(jq -r '.modules[0].outputs.aws_instance_id.value' terraform.tfstate)
-  aws_instance_ip=$(jq -r '.modules[0].outputs.aws_instance_ip.value' terraform.tfstate)
+  aws_instance_id=$(jq -r '.outputs.aws_instance_id.value' terraform.tfstate)
+  aws_instance_ip=$(jq -r '.outputs.aws_instance_ip.value' terraform.tfstate)
   printf "${purple}  Instance ID: $aws_instance_id${nocolor}\n"
   printf "${purple}  Instance IP: $aws_instance_ip${nocolor}\n"
 }
