@@ -1,10 +1,10 @@
 {
   "variables": {
-    "name": "fedora-29",
+    "name": "fedora-30",
 
     "aws_region": "us-east-1",
     "aws_ami_regions": "us-east-1",
-    "aws_source_ami": "ami-0ca275747dcc62c18",
+    "aws_source_ami": "ami-0e11911b7b812959f",
     "aws_instance_type": "t2.micro"
   },
 

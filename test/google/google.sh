@@ -49,7 +49,7 @@ function provision_google_resources {
   sleep 60
   flag_google_active=true
 
-  google_instance_ip=$(jq -r '.modules[0].outputs.google_instance_ip.value' terraform.tfstate)
+  google_instance_ip=$(jq -r '.outputs.google_instance_ip.value' terraform.tfstate)
   printf "${purple}  Instance IP: $google_instance_ip${nocolor}\n"
 }
 

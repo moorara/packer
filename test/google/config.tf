@@ -13,7 +13,7 @@ variable "google_region" {
 
 variable "google_zone" {
   type = "string"
-  default = "us-east1-b"
+  default = "us-east4-a"
 }
 
 variable "google_image" {
