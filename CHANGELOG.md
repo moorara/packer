@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.1.7](https://github.com/moorara/packer/tree/v0.1.7) (2019-09-22)
+[Full Changelog](https://github.com/moorara/packer/compare/v0.1.6...v0.1.7)
+
+**Merged pull requests:**
+
+- Update config.tf [\#18](https://github.com/moorara/packer/pull/18) ([moorara](https://github.com/moorara))
+
 ## [v0.1.6](https://github.com/moorara/packer/tree/v0.1.6) (2019-09-22)
 [Full Changelog](https://github.com/moorara/packer/compare/v0.1.5...v0.1.6)
 
