@@ -8,7 +8,7 @@ variable "google_project_id" {
 
 variable "google_region" {
   type = string
-  default = "us-east1"
+  default = "us-east4"
 }
 
 variable "google_zone" {
