@@ -108,7 +108,7 @@ make fedora-test
 make ubuntu-test
 ```
 
-Here is an screenshot of test results:
+Here is a screenshot of test results:
 
 ![test-screenshot](./images/test-screenshot.png "test-screenshot")
 
