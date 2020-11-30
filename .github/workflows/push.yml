@@ -5,20 +5,20 @@ jobs:
     name: Validate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: Validate CentOS
-        uses: moorara/actions/packer@master
+        uses: moorara/actions/packer@main
         with:
           args: validate -syntax-only ./centos/centos.json
       - name: Validate Debian
-        uses: moorara/actions/packer@master
+        uses: moorara/actions/packer@main
         with:
           args: validate -syntax-only ./debian/debian.json
       - name: Validate Fedora
-        uses: moorara/actions/packer@master
+        uses: moorara/actions/packer@main
         with:
           args: validate -syntax-only ./fedora/fedora.json
       - name: Validate Ubuntu
-        uses: moorara/actions/packer@master
+        uses: moorara/actions/packer@main
         with:
           args: validate -syntax-only ./ubuntu/ubuntu.json
